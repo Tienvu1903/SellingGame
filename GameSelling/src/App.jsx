@@ -7,8 +7,7 @@ function App() {
         <>
             <MainLayout>
                 <HeaderCuaTao />
-                Fuck that nigga
-                <FooterCuaTao />
+                
             </MainLayout>
         </>
     );
