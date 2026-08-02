@@ -1,9 +1,22 @@
 @import '@styles/_mixin.module.scss';
 @import '@styles/_variable.module.scss';
 
-.containerHeader{
+
+.container
+{
+    @include flex_box_custom(center, center, 0px);
     background-color: #f81b77;
-    justify-content: space-around;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.containerHeader{
+    width: 1250px;
+   
+    justify-content: space-between;
     display: flex;
     align-items: center;
     height: 83px;
@@ -12,7 +25,7 @@
 
 .containerBox
 {
-     @include flex_box_custom(center, center, 20px);
+    @include flex_box_custom(center, center, 20px);
 }
 
 .containerBoxIcon {
@@ -20,7 +33,7 @@
 }
 
 .containerMenu {
-    @include flex_box_custom(center, center, 20px);
+    @include flex_box_custom(center, center, 40px);
     margin-left: 20px;
 }
 
@@ -31,6 +44,13 @@
     background-color: Gray;
     width: 26px;
         height: 26px;
+}
+
+.MenuSlide
+{
+    cursor: pointer;
+    padding-top:10px;
+    font-size: 15px;
 }
 
 .MenuSlide::after {

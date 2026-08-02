@@ -1,0 +1,40 @@
+@import '@styles/mixin.module.scss';
+
+.container
+{
+    @include flex_box_custom(center,center,0px);
+
+    background-image: url(../../assets/icon/imgBanner/Gore.jpg);
+    min-height: 1000px ;
+    
+    background-repeat: no-repeat;
+    background-size: cover ;
+}
+
+.content
+{
+    @include flex_box_custom(center,center,20px);
+    
+    flex-direction: column;
+    
+}
+
+.title
+{
+    font-size: 45px;
+    font-weight: 400;
+    -webkit-text-stroke: 4px #000000;
+    paint-order: stroke fill;
+    color: rgb(182, 2, 173);
+}
+
+.descrip
+{
+    font-size: 25px;
+    font-weight: 400;
+    color: rgb(182, 2, 173);
+    -webkit-text-stroke: 4px #000000;
+    paint-order: stroke fill;
+    margin-bottom: 25px;
+}
+

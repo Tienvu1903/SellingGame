@@ -1,14 +1,13 @@
-import MainLayout from '@components/Layout/Layout';
-import HeaderCuaTao from '@components/Header/Header';
-import FooterCuaTao from '@components/Footer/Footer';
+
+
+import MyHomePage from '@components/HomePage/HomePage';
+
 
 function App() {
     return (
         <>
-            <MainLayout>
-                <HeaderCuaTao />
-                
-            </MainLayout>
+            
+            <MyHomePage />
         </>
     );
 }
